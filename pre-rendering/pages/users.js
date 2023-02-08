@@ -1,3 +1,4 @@
+import User from './component/user'
 export default function Users(props){
     return(
         <>
@@ -5,12 +6,7 @@ export default function Users(props){
         {props.users.map((user) =>{
             return(
                 <div key={props.id}>
-                        <p>
-                            Name: {user.name}
-                        </p>
-                        <p>
-                            Email: {user.email}
-                        </p>
+                   <User user={user}/>
                 </div>
             )
         })}
