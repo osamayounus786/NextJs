@@ -1,11 +1,11 @@
 import User from './component/user'
-export default function Users(props){
+export default function Users({users}){
     return(
         <>
         <h1> List Of Users</h1>
-        {props.users.map((user) =>{
+        {users.map((user) =>{
             return(
-                <div key={props.id}>
+                <div key={user.id}>
                    <User user={user}/>
                 </div>
             )
