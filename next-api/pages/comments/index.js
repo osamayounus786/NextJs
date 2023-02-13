@@ -1,15 +1,15 @@
 import { useState } from 'react'
 function CommentsPage() {
-  const [comments, setComments] = useState([]) // get request method
-  const [comment, setComment] = useState('') // post request method
-  
-  const fetchComments = async () => { // get request method
+  const [comments, setComments] = useState([])
+  const [comment, setComment] = useState('')
+
+  const fetchComments = async () => {
     const response = await fetch('/api/comments')
     const data = await response.json()
     setComments(data)
   }
 
-  const submitComment = async () => { // post request method
+  const submitComment = async () => {
     const response = await fetch('/api/comments', {
       method: 'POST',
       body: JSON.stringify({ comment }),
@@ -31,7 +31,6 @@ function CommentsPage() {
   }
   return (
     <>
-     {/* // post request method */}
       <div>
         <input
           type='text'
@@ -41,9 +40,7 @@ function CommentsPage() {
         <button onClick={submitComment}>Submit comment</button>
       </div>
       <hr />
-      {/* // get request method */}
-      <button onClick={fetchComments}>Load comments</button> 
-
+      <button onClick={fetchComments}>Load comments</button>
       {comments.map(comment => {
         return (
           <div key={comment.id}>
