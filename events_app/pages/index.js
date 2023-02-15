@@ -27,7 +27,7 @@ export default function Home() {
             <main className={
                 styles.main
             }>
-                <a href=''>
+                <a href='/events/london'>
                     <img/>
                     <h2>Events in London</h2>
                     <p>
@@ -40,7 +40,7 @@ export default function Home() {
                         qui officia deserunt mollit anim id est laborum."
                     </p>
                 </a>
-                <a href=''>
+                <a href='/events/sanfracisco'>
                     <img/>
                     <h2>Events in Sanfracisco</h2>
                     <p>
@@ -53,7 +53,7 @@ export default function Home() {
                         qui officia deserunt mollit anim id est laborum."
                     </p>
                 </a>
-                <a href=''>
+                <a href='/events/barcelona'>
                     <img/>
                     <h2>Events in Barceclona</h2>
                     <p>
@@ -75,4 +75,13 @@ export default function Home() {
             </footer>
         </>
     )
+}
+export function getServerSideProps(){
+
+
+    return{
+        props:{
+            title: 'Hello Osama Younus',
+        }
+    }
 }

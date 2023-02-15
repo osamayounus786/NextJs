@@ -1,7 +1,7 @@
-const Page = () =>{
+const EventsPage = () =>{
     return(
         <h1> Dynamic Event Page</h1>
     )
 }
 
-export default Page;
+export default EventsPage;

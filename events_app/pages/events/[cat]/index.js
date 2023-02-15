@@ -1,4 +1,4 @@
-const Page = () =>{
+const EventsCatPage = () =>{
     return(
         <div>
 
@@ -12,4 +12,4 @@ const Page = () =>{
     )
 }
 
-export default Page;
+export default EventsCatPage;

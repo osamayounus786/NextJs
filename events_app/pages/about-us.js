@@ -1,4 +1,4 @@
-const Page = () => {
+const AboutUsPage = () => {
     return (
         <>
         <h1>About Us</h1>
@@ -9,4 +9,4 @@ const Page = () => {
     )
 }
 
-export default Page;
+export default AboutUsPage;
