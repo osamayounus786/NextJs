@@ -3,6 +3,9 @@ const EventsPage = ({data}) => {
     
     return (
         <div>
+             <h1>{
+                data.title
+            }</h1>
             <Image src={
                     data.image
                 }
@@ -13,9 +16,7 @@ const EventsPage = ({data}) => {
                 }
                 priority
                 />
-            <h1>{
-                data.title
-            }</h1>
+           
             <p>{
                 data.description
             }</p>

@@ -1,11 +1,11 @@
-import { Footer } from "../footer/footer";
-import { Header } from "../header/header";
-const  MainLayout = ({children}) =>{
-    return(
+import {Footer} from "../footer/footer";
+import {Header} from "../header/header";
+const MainLayout = ({children}) => {
+    return (
         <>
-        <Header />
-        {children}
-        <Footer />
+            <Header/>
+            <main> {children} </main>
+            <Footer/>
         </>
     )
 }
