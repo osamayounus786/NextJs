@@ -23,7 +23,7 @@ const EventsPage = ({data}) => {
         </div>
     )
 }
-
+// eetx
 export default EventsPage;
 
 export async function getStaticPaths() {
