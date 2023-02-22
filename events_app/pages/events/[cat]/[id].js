@@ -1,30 +1,6 @@
+import SingleEvent from '@/src/components/events/single-event';
 import Image from 'next/image';
-const EventsPage = ({data}) => {
-    
-    return (
-        <div>
-             <h1>{
-                data.title
-            }</h1>
-            <Image src={
-                    data.image
-                }
-                width={1000}
-                height={500}
-                alt={
-                    data.title
-                }
-                priority
-                />
-           
-            <p>{
-                data.description
-            }</p>
-            <input type='email' /> <button>Submit</button>
-        </div>
-    )
-}
-// eetx
+const EventsPage = ({data}) => <SingleEvent data= {data}/>
 export default EventsPage;
 
 export async function getStaticPaths() {
