@@ -20,6 +20,7 @@ const EventsPage = ({data}) => {
             <p>{
                 data.description
             }</p>
+            <input type='email' /> <button>Submit</button>
         </div>
     )
 }
